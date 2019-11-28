@@ -1,15 +1,18 @@
 from pathlib import Path
+from subprocess import run
 import sys
 
-from sphinx.cmd import build as sphinx_build
+DOC_PATH = Path("doc")
+BUILD_PATH = DOC_PATH / "_build"
 
 
 def build() -> None:
-    doc_path = Path("doc")
-    if not doc_path.exists():
-        print("No 'doc/' directory found. Please create one with 'phink init'.")
+    if not DOC_PATH.exists():
+        print("No 'doc/' directory found. Create one with 'phink init'.")
         sys.exit(1)
 
-    build_path = doc_path / "_build"
-
-    sphinx_build.main([str(doc_path), str(build_path)])
+    print("Running Sphinx build...")
+    if run(["sphinx-build", DOC_PATH, BUILD_PATH, "-q"]).returncode == 0:
+        print(f"Built HTML to: {BUILD_PATH}")
+    else:
+        print(f"ERROR: Sphinx build failed")
