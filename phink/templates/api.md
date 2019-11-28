@@ -5,7 +5,7 @@ See the [Sphinx-Napoleon documentation](http://www.sphinx-doc.org/en/master/usag
 
 ## Example
 
-With the following file in `example/__init__.py`:
+With the following file in `api_example/module.py`:
 
 ```python
     class ExampleClass:
@@ -25,7 +25,7 @@ This markup:
 
 ```rst
     ```eval_rst
-        .. autoclass:: example.ExampleClass
+        .. autoclass:: api_example.module.ExampleClass
            :members:
     ```
 ```
@@ -33,6 +33,6 @@ This markup:
 Will produce:
 
 ```eval_rst
-    .. autoclass:: example.ExampleClass
+    .. autoclass:: api_example.module.ExampleClass
        :members:
 ```
