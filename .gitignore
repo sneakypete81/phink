@@ -1,0 +1,6 @@
+/.python-version
+/.vscode
+*.egg-info
+.DS_Store
+__pycache__
+doc/_build

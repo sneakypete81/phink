@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "phink"
+version = "0.1.0"
+description = ""
+authors = ["sneakypete81 <sneakypete81@gmail.com>"]
+
+[tool.poetry.scripts]
+phink = "phink:main"
+
+[tool.poetry.dependencies]
+python = "^3.5"
+
+recommonmark = "^0.6.0"
+sphinx = "^2.2"
+sphinx_rtd_theme = "^0.4.3"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^18.3-alpha.0", allows-prereleases = true, python = "^3.6"}
+flake8 = "^3.7"
+pytest = "^3.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
