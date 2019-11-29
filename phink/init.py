@@ -1,11 +1,13 @@
 from pathlib import Path
+import sys
 from typing import Optional
 
 
 def init() -> None:
     doc_path = Path("doc")
     if doc_path.exists():
-        raise FileExistsError(f"'doc/' directory already exists.")
+        print("'doc/' directory already exists.")
+        sys.exit(1)
     create_dirs(doc_path)
 
     data = Data.get_user_input()
@@ -44,7 +46,8 @@ class Data:
     def ask(question: str) -> str:
         answer = input(f"{question}: ")
         if answer == "":
-            raise ValueError("No answer given - aborting.")
+            print("No answer given - aborting.")
+            sys.exit(1)
         return answer
 
     def __getattr__(self, name: str) -> str:
