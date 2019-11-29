@@ -29,6 +29,7 @@ def create_dirs(doc_path: Path) -> None:
 
 
 class Data:
+    doc_path: Path
     project: str
     project_section_underline: str
 
@@ -40,7 +41,7 @@ class Data:
         return data
 
     @staticmethod
-    def ask(question):
+    def ask(question: str) -> str:
         answer = input(f"{question}: ")
         if answer == "":
             raise ValueError("No answer given - aborting.")

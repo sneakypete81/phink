@@ -11,5 +11,5 @@ def serve() -> None:
     server.serve(root=BUILD_PATH)
 
 
-def check_ignore(path):
+def check_ignore(path: str) -> bool:
     return path.startswith(str(BUILD_PATH))
