@@ -19,7 +19,7 @@ def init() -> None:
     print()
     print(f"Documentation source has been written to '{doc_path}/'.")
     print("Please edit it as you wish.")
-    print("Use 'phink build' to generate the HTML.")
+    print("Use 'phink serve' to view your docs in your browser.")
 
 
 def create_dirs(doc_path: Path) -> None:
