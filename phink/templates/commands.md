@@ -11,6 +11,9 @@
 The `init` command creates a `{data.doc_path}/` directory in your project,
 populating it with some sample documentation to get you started.
 
+You should add the `{data.doc_path}/_build/` directory to your `.gitignore`
+file, to ensure it isn't accidentally comitted.
+
 ## Build
 
 ```sh
@@ -18,7 +21,7 @@ populating it with some sample documentation to get you started.
 ```
 
 The `build` command generates your HTML documentation.
-This is output to the `{data.doc_path}/_build/` folder.
+This is output to the `{data.doc_path}/_build/` directory.
 
 ## Serve
 

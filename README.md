@@ -38,5 +38,6 @@ This file is saved to your root project directory and symlinked into the `doc/` 
 The documentation will be rebuilt and reloaded automatically in your browser.
 
 **Commit** and push to your Git repository.
+Make sure you don't commit the `doc/_build` directory.
 
 **Publish** to ReadTheDocs by following the [RTD import documentation](https://docs.readthedocs.io/en/stable/intro/import-guide.html).
