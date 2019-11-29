@@ -13,7 +13,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
-
+html_show_copyright = False
 napoleon_use_rtype = False
 
 
