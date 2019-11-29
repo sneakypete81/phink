@@ -5,7 +5,6 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 project = "{data.project}"
-author = "{data.author}"
 
 extensions = ["sphinx.ext.napoleon", "recommonmark"]
 

@@ -29,14 +29,12 @@ def create_dirs(doc_path: Path) -> None:
 
 class Data:
     project: str
-    author: str
     project_section_underline: str
 
     @classmethod
     def get_user_input(cls) -> "Data":
         data = cls()
         data.project = cls.ask("Project name")
-        data.author = cls.ask("Author")
         data.project_section_underline = "=" * len(data.project)
         return data
 
