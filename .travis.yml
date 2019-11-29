@@ -1,0 +1,28 @@
+# Config file for automatic testing at travis-ci.org
+
+dist: xenial
+language: python
+python:
+  - "3.5"
+  - "3.6"
+  - "3.7"
+
+install: pip install tox-travis poetry # codecov
+
+script: tox
+
+# after_success: codecov
+
+jobs:
+  include:
+    - stage: deploy
+      script: poetry publish --build --username sneakypete81 --password $PYPI_PASS
+
+stages:
+  - test
+  - name: deploy
+    if: tag IS present AND repo = sneakypete81/phink
+
+env:
+  global:
+    secure: M+OENLxY3iWo+j6JNeqU35F86DQv8puo+23Pbw0xaOo21EV7xx/8vdo4k+oUu03HByHGBChjnLXOQQJ0lsgYHrcHdAQoiCUHpb92p6SAJ0fFxVY8XGNBw1hqjZgcb7ohqWChAiTmEBMIsDjILVHnyShfQCxL4f+KsiUJ+sV8iyEu3nuoDJZ5IlYkiBWny22675KrfhIEmKdtixgJ/zNycExmeHd2UtDxwXkAVRc9AzNsuRtnK26k+OSFGtb4Bl3+pI6my1KDA8j8Yjdbhw7ClzzEIYYlPLLaKfnmpv4A/fTZjKfqrQOvLeTPoNxv46rXs0e5Ly4wrpwmiJs8glni2R/ftwXoFIsHD71Srwr+IziK9up9lxeY4OexUW/Hy7rYghkPfX7MCiQd8Oqg+xCnH8KqKhTe+3IV9vu1z8q1ETqAMGjM/K1OsAUlszzD/0VK5Qy3NtUxGDjDG40hZ7dCQEtIfAy3k8rS1154l2wicz7S/DlVwCJ41JrVAYdvzEFi7JvaPSsbbc2Iqj35xny2bMwcnVl8V7mSfPwsuqyLXA92ijGVlyfphGUyZL0IajE2Rl4hUJwWPybAqiV5ihWyZubEsk/shIpwBk7ukzn38uLlhHnVnzZN1CDmhBPk7g8cfTsvsBa4Hhk+Ox61qKB1uPVxUSl/+7kZpmoma7CcLx0=
