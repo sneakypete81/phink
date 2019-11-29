@@ -8,4 +8,5 @@ Contents
 
    README
    customising
+   commands
    api

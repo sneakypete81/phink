@@ -14,6 +14,7 @@ def init() -> None:
     apply_template("conf.py", data)
     apply_template("index.rst", data)
     apply_template("customising.md", data)
+    apply_template("commands.md", data)
     apply_template("api.md", data)
 
     print()
