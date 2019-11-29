@@ -8,6 +8,7 @@ project = "{data.project}"
 
 extensions = ["sphinx.ext.napoleon", "recommonmark"]
 
+master_doc = "index"
 source_suffix = [".rst", ".md"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
