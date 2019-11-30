@@ -7,6 +7,10 @@ You can replace it with a description of your project.
 This file is saved to your root project directory and symlinked into the `{data.doc_path}/` directory.
 -->
 
+[![PyPI](https://img.shields.io/pypi/v/phink.svg)](https://pypi.org/pypi/phink)
+[![Build Status](https://travis-ci.com/sneakypete81/phink.svg?branch=master)](https://travis-ci.com/sneakypete81/phink)
+[![Documentation Status](https://readthedocs.org/projects/phink/badge/?version=latest)](https://phink.readthedocs.io/)
+
 **Phink** provides a convenient wrapper around [Sphinx](http://www.sphinx-doc.org) to make project documentation a breeze.
 
 * Super easy to setup and build
