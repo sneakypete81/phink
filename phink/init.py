@@ -8,7 +8,7 @@ def init() -> None:
     if doc_path.exists():
         print("'doc/' directory already exists.")
         sys.exit(1)
-    create_dirs(doc_path)
+    doc_path.mkdir()
 
     data = Data.get_user_input()
     data.doc_path = doc_path
@@ -23,11 +23,6 @@ def init() -> None:
     print(f"Documentation source has been written to '{doc_path}/'.")
     print("Please edit it as you wish.")
     print("Use 'phink serve' to view your docs in your browser.")
-
-
-def create_dirs(doc_path: Path) -> None:
-    doc_path.mkdir()
-    (doc_path / "_static").mkdir()
 
 
 class Data:
