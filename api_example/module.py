@@ -1,6 +1,6 @@
 class ExampleClass:
     def do_something(self, param1, param2):
-        """Example function with PEP 484 type annotations.
+        """Example function with a Google-style docstring.
 
         Args:
             param1 (str): The first parameter.

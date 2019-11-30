@@ -2,7 +2,7 @@
 
 ## Editing Existing Pages
 
-To change a page, simply edit the markdown files in the `doc/` directory and run `phink build`.
+To change a page, simply edit the markdown files in the `doc/` directory.
 
 ## Adding New Pages
 
