@@ -19,6 +19,11 @@ def init() -> None:
     apply_template("commands.md", data)
     apply_template("api.md", data)
 
+    api_example_path = Path("api_example")
+    if not api_example_path.exists():
+        api_example_path.mkdir()
+        apply_template("module.py", data, output_path=api_example_path)
+
     print()
     print(f"Documentation source has been written to '{doc_path}/'.")
     print("Please edit it as you wish.")
