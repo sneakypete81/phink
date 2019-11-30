@@ -14,6 +14,8 @@ This file is saved to your root project directory and symlinked into the `doc/` 
 * Automatically [rebuild and reload](https://livereload.readthedocs.io) during development
 * Extract docstrings for [API documentation](http://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html)
 
+Read the full [Phink documentation](https://phink.readthedocs.io/) to learn more.
+
 ## Installation
 ```sh
     pip install phink
