@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "phink"
-version = "0.1.0"
+version = "0.2.0"
 description = "Phink provides a convenient wrapper around Sphinx to make project documentation a breeze."
 authors = ["sneakypete81 <sneakypete81@gmail.com>"]
 license = "GPL-3.0"
