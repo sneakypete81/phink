@@ -463,10 +463,13 @@ description = "Read the Docs theme for Sphinx"
 name = "sphinx-rtd-theme"
 optional = false
 python-versions = "*"
-version = "0.4.3"
+version = "0.5.0"
 
 [package.dependencies]
 sphinx = "*"
+
+[package.extras]
+dev = ["transifex-client", "sphinxcontrib-httpdomain", "bump2version"]
 
 [[package]]
 category = "main"
@@ -642,7 +645,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pathlib2", "contextlib2", "unittest2"]
 
 [metadata]
-content-hash = "5f10a4798f9b2b1e67754161459d4fd3d9f66e9c807b6f73b7814c29641430c5"
+content-hash = "ea208d1be5356cb154d2a141d1ca729498074f6c74137a9cbfd8d41232a3b92f"
 lock-version = "1.0"
 python-versions = "^3.6"
 
@@ -866,8 +869,8 @@ sphinx = [
     {file = "Sphinx-2.2.1.tar.gz", hash = "sha256:31088dfb95359384b1005619827eaee3056243798c62724fd3fa4b84ee4d71bd"},
 ]
 sphinx-rtd-theme = [
-    {file = "sphinx_rtd_theme-0.4.3-py2.py3-none-any.whl", hash = "sha256:00cf895504a7895ee433807c62094cf1e95f065843bf3acd17037c3e9a2becd4"},
-    {file = "sphinx_rtd_theme-0.4.3.tar.gz", hash = "sha256:728607e34d60456d736cc7991fd236afb828b21b82f956c5ea75f94c8414040a"},
+    {file = "sphinx_rtd_theme-0.5.0-py2.py3-none-any.whl", hash = "sha256:373413d0f82425aaa28fb288009bf0d0964711d347763af2f1b65cafcb028c82"},
+    {file = "sphinx_rtd_theme-0.5.0.tar.gz", hash = "sha256:22c795ba2832a169ca301cd0a083f7a434e09c538c70beb42782c073651b707d"},
 ]
 sphinxcontrib-applehelp = [
     {file = "sphinxcontrib-applehelp-1.0.1.tar.gz", hash = "sha256:edaa0ab2b2bc74403149cb0209d6775c96de797dfd5b5e2a71981309efab3897"},
