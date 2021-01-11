@@ -26,7 +26,7 @@ python = "^3.6"
 livereload = "^2.6"
 recommonmark = "^0.6.0"
 sphinx = "^2.2"
-sphinx_rtd_theme = "^0.4.3"
+sphinx_rtd_theme = ">=0.4.3,<0.6.0"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^19.10b0", allows-prereleases = true, python = "^3.6"}
