@@ -30,7 +30,7 @@ sphinx_rtd_theme = "^0.4.3"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^19.10b0", allows-prereleases = true, python = "^3.6"}
-flake8 = "^3.7"
+flake8 = "^3.8"
 mypy = "^0.770"
 pytest = "^5.4"
 tox = "^3.23"
